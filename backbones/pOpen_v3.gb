@@ -1,0 +1,146 @@
+LOCUS       pOpen_v3                2687 bp ds-DNA     circular     28-JUL-2023
+DEFINITION  .
+KEYWORDS    "creator:Keoni Gandall" "marker:AmpR"
+FEATURES             Location/Qualifiers
+     cloning         1..15
+                     /label="AarI-PaqCI"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: AarI note: PaqCI/AarI sites flanking the construct are for backbone swapping. This greatly simplifies moving constructs between different backbones - for example, moving all FreeGenes parts into a Bacillus subtilis shuttle vector."
+     primer_bind     16..32
+                     /label="M13 fwd (-20)"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: M13 fwd note: common sequencing primer, one of multiple similar variantsM13fwd and M13rev are available from every sanger sequencing company as standard primers, so it is easy to get sanger sequencing on any construct. This was more important before the advent of effective nanopore sequencing providers for plasmids."
+     terminator      33..64
+                     /label="tonB terminator"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+                     /note="label: tonB terminator note: bidirectional E. coli tonB-P14 transcription terminator.Used in pOpen_v3 because it is small and uncommonly used, but still rather strong and bi-directional. For transcriptional isolation."
+     primer_bind     complement(62..80)
+                     /label="SLiCE-rev"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: SLiCE-rev note: SLiCE sites are for inserting genes with SLiCE or Gibson assembly, rather than GoldenGate. For single inserts, SLiCE actually quite a bit cheaper than GoldenGate while maintaining decent yield."
+     cloning         81..100
+                     /label="BbsI-BtgZI"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: BbsI-BtgZI note: BbsI and BtgZI are used for inserting genes into pOpen_v3. Twist and other high-throughput synthesis providers have a minimal size for genes, which can be problematic for very small genes. However, you can ""piggyback"" small genes onto larger genes, with the smaller using BtgZI and the larger using BbsI, and get them synthesized together. During clone time, the enzyme choosen will determine which of the two genes are inserted into pOpen_v3."
+     CDS             426..731
+                     /label="ccdB"
+                     /ApEinfo_revcolor="#993366"
+                     /ApEinfo_fwdcolor="#993366"
+                     /note="codon_start: 1 gene: ccdB label: ccdB note: Plasmids containing the ccdB gene cannot bepropagated in standard E. coli strains. product: CcdB, a bacterial toxin that poisons DNA gyrase transl_table: 1 translation: MQFKVYTYKRESRYRLFVDVQSDIIDTPGRRMVIPLASARLLSDKVSRELYPVVHIGDESWRMMTTDMASVPVSVIGEEVADLSHRENDIKNAINLMFWGI*"
+     misc_feature    755..774
+                     /label="BbsI-BtgZI"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: BbsI-BtgZI note: BbsI and BtgZI are used for inserting genes into pOpen_v3. Twist and other high-throughput synthesis providers have a minimal size for genes, which can be problematic for very small genes. However, you can ""piggyback"" small genes onto larger genes, with the smaller using BtgZI and the larger using BbsI, and get them synthesized together. During clone time, the enzyme choosen will determine which of the two genes are inserted into pOpen_v3."
+     primer_bind     775..793
+                     /label="SLiCE-for"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: SLiCE-for note: SLiCE sites are for inserting genes with SLiCE or Gibson assembly, rather than GoldenGate. For single inserts, SLiCE actually quite a bit cheaper than GoldenGate while maintaining decent yield."
+     primer_bind     complement(794..812)
+                     /label="T7 Reverse"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: T7 Reverse note: T7 reverse primer bind site from Elim. Can be used as a primer sequencing site for genes as an alternative to M13rev."
+     terminator      808..855
+                     /label="T7 terminator"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+                     /note="label: T7 terminator note: transcription terminator for bacteriophage T7 RNA polymerase.Used in pOpen_v3 so that constructs built with T7 promoters can be directly used, without moving into another vector."
+     primer_bind     complement(856..876)
+                     /label="M13 rev"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: M13 rev note: common sequencing primer, one of multiple similar variantsM13fwd and M13rev are available from every sanger sequencing company as standard primers, so it is easy to get sanger sequencing on any construct. This was more important before the advent of effective nanopore sequencing providers for plasmids"
+     misc_feature    877..891
+                     /label="AarI-PaqCI"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: AarI note: PaqCI/AarI sites flanking the construct are for backbone swapping. This greatly simplifies moving constructs between different backbones - for example, moving all FreeGenes parts into a Bacillus subtilis shuttle vector."
+     CDS             892..942
+                     /label="watermark"
+                     /ApEinfo_revcolor="#993366"
+                     /ApEinfo_fwdcolor="#993366"
+                     /note="codon_start: 1 label: spacer product: A quote from Richard Stallman. transl_table: 1 translation: MTHINKFREESPEECH*"
+     rep_origin      complement(943..1531)
+                     /label="ori"
+                     /ApEinfo_revcolor="#ffef86"
+                     /ApEinfo_fwdcolor="#ffef86"
+                     /note="direction: LEFT note: high-copy-number ColE1/pMB1/pBR322/pUC origin of replication"
+     misc_feature    1532..1721
+                     /label="spacer"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: spacer note: Leftover from pUC19. What does this do? Who the fuck knows."
+     misc_feature    1536..1555
+                     /label="anneal_sequence"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: anneal_sequence note: primers can effectively bind here. Used during Gibson assembly of the original pOpen_v3 plasmid"
+     CDS             complement(1722..2582)
+                     /label="AmpR"
+                     /ApEinfo_revcolor="#993366"
+                     /ApEinfo_fwdcolor="#993366"
+                     /note="codon_start: 1 gene: bla label: AmpR note: confers resistance to ampicillin, carbenicillin, and related antibiotics product: beta-lactamase.BsaI was removed from the original CDS. transl_table: 1 translation: MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRIDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW*"
+     misc_feature    1866..1866
+                     /label="C->A"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: C->A note: removes BsaI site"
+     promoter        complement(2583..2687)
+                     /label="AmpR promoter"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+                     /note="gene: bla label: AmpR promoter"
+ORIGIN
+        1 cacctgcacc agtcagtaaa acgacggcca gtagtcaaaa gcctccgacc ggaggctttt
+       61 gacttggttc aggtggagtg ggagtagtct tcgccatcgc tactaaaagc cagataacag
+      121 tatgcgtatt tgcgcgctga tttttgcggt ataagaatat atactgatat gtatacccga
+      181 agtatgtcaa aaagaggtat gctatgaagc agcgtattac agtgacagtt gacagcgaca
+      241 gctatcagtt gctcaaggca tatatgatgt caatatctcc ggtctggtaa gcacaaccat
+      301 gcagaatgaa gcccgtcgtc tgcgtgccga acgctggaaa gcggaaaatc aggaagggat
+      361 ggctgaggtc gcccggttta ttgaaatgaa cggctctttt gctgacgaga acaggggctg
+      421 gtgaaatgca gtttaaggtt tacacctata aaagagagag ccgttatcgt ctgtttgtgg
+      481 atgtacagag tgatattatt gacacgcccg ggcgacggat ggtgatcccc ctggccagtg
+      541 cacgtctgct gtcagataaa gtctcccgtg aactttaccc ggtggtgcat atcggggatg
+      601 aaagctggcg catgatgacc accgatatgg ccagtgtgcc ggtctccgtt atcggggaag
+      661 aagtggctga tctcagccac cgcgaaaatg acatcaaaaa cgccattaac ctgatgttct
+      721 ggggaatata aatgtcaggc tcccttatac acaggcgatg ttgaagacca cgctgaggtg
+      781 tcaatcgtcg gagccgctga gcaataacta gcataacccc ttggggcctc taaacgggtc
+      841 ttgaggggtt ttttgcatgg tcatagctgt ttcctgagag cttggcaggt gatgacacac
+      901 attaacaaat ttcgtgagga gtctccagaa gaatgccatt aatttccata ggctccgccc
+      961 ccctgacgag catcacaaaa atcgacgctc aagtcagagg tggcgaaacc cgacaggact
+     1021 ataaagatac caggcgtttc cccctggaag ctccctcgtg cgctctcctg ttccgaccct
+     1081 gccgcttacc ggatacctgt ccgcctttct cccttcggga agcgtggcgc tttctcatag
+     1141 ctcacgctgt aggtatctca gttcggtgta ggtcgttcgc tccaagctgg gctgtgtgca
+     1201 cgaacccccc gttcagcccg accgctgcgc cttatccggt aactatcgtc ttgagtccaa
+     1261 cccggtaaga cacgacttat cgccactggc agcagccact ggtaacagga ttagcagagc
+     1321 gaggtatgta ggcggtgcta cagagttctt gaagtggtgg cctaactacg gctacactag
+     1381 aagaacagta tttggtatct gcgctctgct gaagccagtt accttcggaa aaagagttgg
+     1441 tagctcttga tccggcaaac aaaccaccgc tggtagcggt ggtttttttg tttgcaagca
+     1501 gcagattacg cgcagaaaaa aaggatctca agaaggccta ctattagcaa caacgatcct
+     1561 ttgatctttt ctacggggtc tgacgctcag tggaacgaaa actcacgtta agggattttg
+     1621 gtcatgagat tatcaaaaag gatcttcacc tagatccttt taaattaaaa atgaagtttt
+     1681 aaatcaatct aaagtatata tgagtaaact tggtctgaca gttaccaatg cttaatcagt
+     1741 gaggcaccta tctcagcgat ctgtctattt cgttcatcca tagttgcctg actccccgtc
+     1801 gtgtagataa ctacgatacg ggagggctta ccatctggcc ccagtgctgc aatgataccg
+     1861 cgagaaccac gctcaccggc tccagattta tcagcaataa accagccagc cggaagggcc
+     1921 gagcgcagaa gtggtcctgc aactttatcc gcctccatcc agtctattaa ttgttgccgg
+     1981 gaagctagag taagtagttc gccagttaat agtttgcgca acgttgttgc cattgctaca
+     2041 ggcatcgtgg tgtcacgctc gtcgtttggt atggcttcat tcagctccgg ttcccaacga
+     2101 tcaaggcgag ttacatgatc ccccatgttg tgcaaaaaag cggttagctc cttcggtcct
+     2161 ccgatcgttg tcagaagtaa gttggccgca gtgttatcac tcatggttat ggcagcactg
+     2221 cataattctc ttactgtcat gccatccgta agatgctttt ctgtgactgg tgagtactca
+     2281 accaagtcat tctgagaata gtgtatgcgg cgaccgagtt gctcttgccc ggcgtcaata
+     2341 cgggataata ccgcgccaca tagcagaact ttaaaagtgc tcatcattgg aaaacgttct
+     2401 tcggggcgaa aactctcaag gatcttaccg ctgttgagat ccagttcgat gtaacccact
+     2461 cgtgcaccca actgatcttc agcatctttt actttcacca gcgtttctgg gtgagcaaaa
+     2521 acaggaaggc aaaatgccgc aaaaaaggga ataagggcga cacggaaatg ttgaatactc
+     2581 atactcttcc tttttcaata ttattgaagc atttatcagg gttattgtct catgagcgga
+     2641 tacatatttg aatgtattta gaaaaataaa caaatagggg ttccgcg
+//
